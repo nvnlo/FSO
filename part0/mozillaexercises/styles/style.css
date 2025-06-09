@@ -1,0 +1,56 @@
+/* give <p> elements a red text color */
+/* p is called a selector. it selects the element(s) to style */
+/* inside the curley braces is called a declaration, which sets a value for a specific property */
+/* the whole structure is called a ruleset */
+/* p {
+    color: red;
+  } */
+
+html {
+  /* px means "pixels". The base font size is now 10 pixels high */
+  font-size: 10px;
+  /* font-family sets the font(s) for all HTML. defines a global base font */
+  font-family: "Roboto", sans-serif;
+  /* set a background color for the whole page */
+  background-color: #00539f;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  /* body is always 600 pixels wide */
+  width: 600px;
+  /* when setting two values on a property (margin, padding), first value affects top/bottom, second affects right/left */
+  /* auto divides the available horizontal space evenly */
+  margin: 0 auto;
+  background-color: #ff9500;
+  /* 4 values for padding - goal is to put some space around the content */
+  /* in this example there is no padding at the top, and 20 at right/bottom/left */
+  /* values are set in top, right, bottom, left */
+  padding: 0 20px 20px 20px;
+  /* width, style and color of boder */
+  border: 5px solid black;
+}
+
+img {
+  /* <body> element is a block element - it takes up space on the page and can accept box properties */
+  /* <img> elements are inline elements, so they don't inherit the same values */
+  /* so we have to give it block-level behavior */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
